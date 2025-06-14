@@ -76,14 +76,18 @@ body {
 
 .selfimg {
     width: 150px;
+    height: 150px;          
     margin: 0 auto;
+    overflow: hidden;       
+    border-radius: 50%;     
 }
 
 .selfimg img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;      /* Keeps image proportionate and fills the circle */
 }
+
 
 .main {
     flex: 70%;
@@ -97,5 +101,5 @@ body {
     background: #4f81bd;
     color: white;
     width: 100%;
-    position: relative; /* Changed from absolute to relative */
+    position: relative; 
 }
